@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./" type="x-icon">
+    <link rel="shortcut icon" href=".favicon.png" type="image/x-icon">
+    <title>Armazem do Sítio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" 
+    rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Barlow:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<style>
+  body{
+  min-height:100vh;
+  }
+
+  ::-webkit-scrollbar 
+  {
+      width: 12px;
+  }
+
+  ::-webkit-scrollbar-track 
+  {
+      background:orange;
+  }
+
+  ::-webkit-scrollbar-thumb 
+  {
+      background: #D2691E;
+      border-radius: 14px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover 
+  {
+      opacity: .95;
+  }
+</style>
+<body data-bs-theme="light">
+
+  <header>
+    <nav class="navbar-expand-lg navbar bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="trigo.png" width="5%" height="5%" alt="semeando-sementes.png"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="trigo.png" width="2%" height="2%" alt="Logo"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sobre</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contato">Contato</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="modo-noturno">
+                    <label class="form-check-label" for="modo-noturno">Modo noturno</label>
+                  </div></a>
+              </li>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+      <section class="banners banner-1 d-flex flex-column justify-content-center text-center">
+        <div class="banners-titulo bg-body-secondary py-5">
+          <h2 class="fw-bold">Sua pausa para desfrutar a vida. </h2>
+          <p>Boas-vindas ao Armazem do Sítio Um ambiente aconchegante e acolhedor para apreciar um bom produto atersanal.</p>
+        </div>
+      </section>
+
+      <section class="py-5">
+        <h2 class="text-center fw-bold pb-1">Nossos serviços</h2>
+
+        <div class="container d-flex justify-content-around flex-wrap">
+
+          <div class="card m-4" style="width: 20rem;">
+            <img src="laranja.jpeg" class="card-img-top"
+              alt="Balcão de padaria tradicional com alimentos diversos">
+            <div class="card-body">
+              <h5 class="card-title py-2 fw-bold">Frutas</h5>
+              <p class="card-text">Nossas Frutas oferecem uma ampla variedade de sabor, o Famoso morango, temos a Laranja
+                Poncã e entre outras com uma qualidade extrema. Uma excelente opção para quem busca uma Fruta Fresca e com alta qualidade.</p>
+              <a href="#" class="btn botao-padrao w-100 fw-bold" data-bs-toggle="offcanvas" data-bs-target="#canvas-1" aria-controls="offcanvasRight">Quero detalhes</a>
+            </div>
+          </div>
+
+          <div class="card m-4" style="width: 20rem;">
+            <img src="repolho.jpeg" class="card-img-top" alt="Mesa de buffet com alimentos diversos">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Verduras</h5>
+              <p class="card-text">Verduras, com produções de alta qualidade. Com
+                um sabor fresco, temos diversas verduras .</p>
+              <a href="#" class="btn botao-padrao w-100 fw-bold mt-3" data-bs-toggle="offcanvas"
+              data-bs-target="#canvas-2" aria-controls="offcanvasRight">Quero detalhes</a>
+            </div>
+          </div>
+
+          <div class="card m-4" style="width: 20rem;">
+            <img src="WhatsApp Image 2025-05-22 at 09.09.14.jpeg" class="card-img-top" alt="Caixa aberta armazenando comidas diversas">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Delivery</h5>
+              <p class="card-text">Para quem deseja receber no conforto de sua casa, oferecemos delivery dos
+                produtos. Com o mesmo produtos do site variado de sempre, sem perder nosso sabor e padrão de
+                qualidade.</p>
+              <a href="#" class="btn botao-padrao w-100 fw-bold mt-3" data-bs-toggle="offcanvas"
+              data-bs-target="#canvas-3" aria-controls="offcanvasRight">Quero detalhes</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="banners banner-2 d-flex flex-column justify-content-center">
+        <div class="banners-titulo bg-body-secondary text-center py-5">
+          <h2 class="fw-bold">Portas abertas para todos os públicos.</h2>
+          <p>Nosso espaço entregamos diretamente ao conforto de sua casa, ou você pode retirar no local seu produto.</p>
+        </div>
+      </section>
+
+      <section class="py-5">
+
+        <h2 class="fw-bold text-center pb-1">Nossos produtos</h2>
+        
+        <div class="row mx-0">
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card border-0 mx-auto btn" data-bs-toggle="modal" data-bs-target="#modal-1"
+                    style="width: 18rem;">
+                    <img src="bolo de chocolate.jpeg" height="8%" width="9%" class="card-img-top" alt="Café preto.">
+                    <div class="card-body">
+                        <h3 class="card-text text-center fw-bold">Bolo de Chocolate
+                        <br> 
+                        12.00$</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card border-0 mx-auto btn"data-bs-toggle="modal" data-bs-target="#modal-2"
+                    style="width: 18rem;">
+                    <img src="chinek.jpeg" height="11%" width="9%" class="card-img-top" alt="Café expresso.">
+                    <div class="card-body">
+                        <h3 class="card-text fw-bold text-center">Schnecke
+                             <br>
+                        10.00$</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card border-0 mx-auto btn" style="width: 18rem;">
+                    <img src="Bolo.jpeg" height="11%" width="9%"class="card-img-top" alt="Vitaminas variadas">
+                    <div class="card-body">
+                        <h3 class="card-text text-center fw-bold text-nowrap">Bolo de Beijinho
+                        15.00$
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card border-0 mx-auto btn" style="width: 18rem;">
+                    <img src="Pinhão.jpeg" height="1%" width="4%"class="card-img-top" alt="Pães variados">
+                    <div class="card-body">
+                        <h3 class="card-text text-center fw-bold">Pinhão
+                            <br>
+                        18.00$</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card border-0 mx-auto btn" style="width: 18rem;">
+                    <img src="morango.jpeg" height="8%" width="9%"class="card-img-top" alt="Bolo de morango">
+                    <div class="card-body">
+                        <h3 class="card-text text-center fw-bold">Morango
+                        20.00$</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card border-0 mx-auto btn" style="width: 18rem;">
+                    <img src="melão.jpeg" height="8%" width="9%" class="card-img-top" alt="Torta salgada">
+                    <div class="card-body">
+                        <h3 class="card-text text-center fw-bold">Melão
+                            <br>
+                       8.00$</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      </section>
+
+      <section class="banners banner-3">
+      </section>
+
+      <section class="py-4 container">
+        <div class="row">
+          <div class="col-10 col-xl-8 mx-auto">
+            <div class="border border-2 rounded p-3">
+              <h3 class="fw-bold p-3">Entre em contato!</h3>
+              <form id="contato">
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="floatingNome" placeholder="Nome">
+                  <label for="floatingNome">Nome</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="email" class="form-control" id="floatingEmail" placeholder="rafael.assisrbi@gmail.com">
+                  <label for="floatingEmail">Email</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="number" class="form-control" id="floatingTelefone" placeholder="Telefone">
+                  <label for="floatingTelefone">Telefone</label>
+                </div>
+                <select class="form-select mb-3" aria-label="Default select example">
+                  <option selected>Preferência de contato:</option>
+                  <option value="1">WhatsApp</option>
+                  <option value="2">Email</option>
+                  <option value="3">Ligação</option>
+                </select>
+                <label for="nivel-satisfacao" class="form-label">Nível de satisfação:</label>
+                <input type="range" class="form-range input-range" id="nivel-satisfacao">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Deseja receber novidades por email?
+                  </label>
+                </div>
+                <button type="button" class="btn botao-padrao w-100 fw-bold mt-3 py-3">Enviar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <footer class="text-center">
+        <section class="container p-4 pb-0 mb-4">
+          <a class="btn" href="https://api.whatsapp.com/send?phone=5543996795604"><i class="bi bi-whatsapp"></i></a>
+           <a href="https://github.com/Isaa22" target="_blank" rel="noopener noreferrer">
+                    <img src="github.png" height="5%" width="2%"></img>
+                    
+                </a>
+                <a href="https://www.instagram.com/gordinho_dosandero?igsh=OWd3d2tnMjJ0aG0x" target="_blank" rel="noopener noreferrer">
+                    <img src="instagram.png"height="5%" width="2%"></img>
+                    
+                    
+                </a>
+        </section>
+        <div class="p-3">
+            2024 <i class="bi bi-c-circle"></i> DESENVOLVIDO POR MARIA EDUARDA
+        </div>
+    </footer>
+
+  </main>
+
+    <!-- canvas 1 -->
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="canvas-1" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasRightLabel">Fruticultura </h5>
+        
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button botao-padrao" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Morango
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Temos um excelente espaço para retirar sua Caixa de Moarango, com um ótimo atendimento e para desfrutar seus melhores momentos.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed botao-padrao" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Atendimentos
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Além de atendermos o dia todo, oferecemos Bolos e aquele Cafezinho da tarde com carinho!
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed botao-padrao" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Coworking
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Temos espaço adequado para trabalho, com conexão de internet de alta velocidade Para Você tirar foto no nosso pomar e nos marcar e um alto atendimento.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- Canvas 2 -->
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="canvas-2" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasRightLabel">horticultura</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed botao-padrao" type="button" data-bs-toggle="collapse"
+              data-bs-target="#accordionEventos" aria-expanded="false" aria-controls="collapseOne">
+             Verduras
+            </button>
+          </h2>
+          <div id="accordionEventos" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Organizamos pacotes  personalizados de verduras, De alta qualidade!
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed botao-padrao" type="button" data-bs-toggle="collapse"
+              data-bs-target="#accordionCatering" aria-expanded="false" aria-controls="collapseOne">
+              Oscilações
+            </button>
+          </h2>
+          <div id="accordionCatering" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Oferecemos serviço de Verduras variadas para, produções.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </div>
+  </div>
+
+  <!-- Canvas 3 -->
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="canvas-3" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasRightLabel">Delivery</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed botao-padrao" type="button" data-bs-toggle="collapse"
+              data-bs-target="#accordionEncomendas" aria-expanded="false" aria-controls="collapseOne">
+              Encomendas para Eventos
+            </button>
+          </h2>
+          <div id="accordionEncomendas" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Produzimos e entregamos os itens de Fruticultura e Horticultura de nosso Catálago em grandes quantidades para seu
+             Consumo! Basta entrar em contato e fazer Seu Pedido.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed botao-padrao" type="button" data-bs-toggle="collapse"
+              data-bs-target="#accordionEntrega" aria-expanded="false" aria-controls="collapseOne">
+              Entrega por aplicativo
+            </button>
+          </h2>
+          <div id="accordionEntrega" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Entregamos pelos aplicativos Ifood e Whatsapp. Consulte nosso cardápio e faça seu
+              pedido!
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </div>
+  </div>
+
+  <!-- Modal 1 -->
+
+  <div class="modal fade" id="modal-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Bolo de Chocolate</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="bolo de chocolate.jpeg" class="w-100" alt="Xícara de café preto">
+          <p>O armazem é  conhecido por seus Bolos de Chcolate, que agradam aos amantes do doce. Nossos Chocolates são cuidadosamente selecionados para produzir um aroma rico e sabor equilibrado.</p>
+          <p>Entre o Bolo de Chocolate e o Bolo de Ninho, destaca-se o "Schnecke", um blend exclusivo para os que amam um sabor equilibrado. Outra opção popular é o "Chinek", um Pão macio e saboroso.</p>
+        </div>
+        <div class="modal-footer mx-auto">
+          <button type="button" class="btn btn-secondary botao-padrao border-0" data-bs-dismiss="modal">Fechar janela</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Modal 2 -->
+
+  <div class="modal fade" id="modal-2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Schnecke</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="chinek.jpeg" class="w-100" alt=<"Schnecke">
+          <p>Somos conhecidos também por nossos schneckes
+            selecionados de alta qualidade.</p>
+            <br>
+            
+          <p>Entre as opções de doces, destacamos o Bolinho de chuva,
+             resultando em um bolinho macio e sabor desejado. 
+              <br>
+              <br>
+              .</p>
+        </div>
+        <div class="modal-footer mx-auto">
+          <button type="button" class="btn btn-secondary botao-padrao border-0" data-bs-dismiss="modal">Fechar janela</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
